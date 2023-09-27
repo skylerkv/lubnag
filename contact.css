@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    padding-bottom: 9.5rem;
+    font-family: 'Baskervville', serif;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Header Style Start */
+header {
+    text-align: center;
+    padding: 2rem;
+}
+
+.logo {
+    width: 25.5rem;
+}
+
+@media (max-width: 31.25rem) {
+    .logo {
+        width: 100%;
+    }
+}
+/* Header Style End */
+
+/* Nav Style Start */
+nav {
+    margin-bottom: 5rem;
+}
+
+.nav-ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin: 0;
+}
+
+.nav-li {
+    display: inline;
+}
+
+a {
+    font-family: SilkFlower, Arial;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #D6203D;
+}
+
+@media (max-width: 21.875rem) {
+    .nav-li {
+        font-size: 0.75rem;
+    }
+}
+/* Nav Style End */
+
+/* Page Header Start*/
+.page-header {
+    text-align: center;
+    font-family: SilkFlower, Arial;
+    padding-bottom: 2rem;
+}
+/* Page Header End */
+
+/* Main Style Start */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 2rem;
+    flex-direction: row;
+}
+/* Main Style End */
+
+@media (max-width: 62.5rem) {
+    main {
+        flex-direction: column;
+    }
+
+    .flname-container {
+        flex-direction: column;
+    }
+
+    .contact-portrait {
+        width: 90%;
+    }
+} 
+
+.contact-portrait {
+    max-width: 30rem;
+    border-radius: 0.25rem;
+}
+
+.form-container {
+    max-width: 40.625rem;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.flname-container {
+    display: flex;
+    gap: 1.25rem;
+}
+
+.form-flex-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-flex-container > input[type="text"], .form-flex-container > textarea {
+    padding: 0.25rem;
+    line-height: 1.5rem;
+    font-family: 'Baskervville', serif;
+    font-size: 1.1rem;
+    border-radius: 0.25rem;
+    border: 1px solid black;
+}
+
+.form-flex-container > textarea {
+    resize: vertical;
+}
+
+.form-flex-container > label {
+    margin-bottom: 0.5rem;
+}
+
+.form-submit-container {
+    display: flex;
+    justify-content: center;
+}
+
+.form-submit {
+    width: 12rem;
+    height: 3rem;
+    font-family: 'Baskervville', serif;
+    font-weight: bold;
+    font-size: 1.125rem;
+    border-radius: 0.25rem;
+    background-color: #FFE6F5;
+    border: 1px solid black;
+}
+
+.form-submit:hover {
+    cursor: pointer;
+    background-color: #f9cde7;
+}
+
+/* Footer Style Start */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 6.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-icon {
+    font-size: 1.5rem;
+}
+/* Footer Style End */
+
+@font-face {
+    font-family: 'SilkFlower';
+    src: url('./font/silk_flower-webfont.woff2') format('woff2'), url('./font/silk_flower-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
